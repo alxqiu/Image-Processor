@@ -1,0 +1,15 @@
+add blank
+add blank
+set current 2
+remove
+current layer
+make invis
+add blank
+remove
+set current 1
+make vis
+remove # there should be none left here....
+import potat.jpg
+sharpen
+greyscale
+export potat3.png

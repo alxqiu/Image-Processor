@@ -1,0 +1,9 @@
+add blank
+add blank
+set current 1
+num layers
+remove
+num layers
+add blank
+make invis
+make vis
