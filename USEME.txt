@@ -1,3 +1,17 @@
+=================To Run==================
+In GUI mode: double click LIME.jar. 
+
+From command prompt:
+  C:\User\...\> java -jar LIME.jar -script path-of-script
+  ---To run only as a script (.txt, .bat file extensions, see commands below) and exit after. Will not open GUI.
+  
+  C:\User\...\> java -jar LIME.jar -text
+  ---To run in command prompt. 
+  
+  C:\User\...\> java -jar LIME.jar -interactive
+  ---Run in GUI mode. 
+
+
 =================GUI Control======================
 
 Use "To Apply: " dropdown menu to select desired effect to be applied to the image, and press "Apply" to 
