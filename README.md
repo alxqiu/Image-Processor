@@ -15,27 +15,27 @@ package, since the controller is the intermediary between the view and model.
 Additionally, all images used in the /res folder are from team members' cell phones
 and all other images, including the checkerboard images and the edited versions of the original photos. 
 
-=================Extra credit ================= 
+=================Mosaic Effect ================= 
 Mosaic (implements IOperation): 
-For this extra credit, we implemented the mosaic editing of an image. Using the MOSAIC option in the GUI,
-the user can apply the Mosaic filter to the current image. However, a design choice we made was that the 
+We implemented the mosaic editing of an image by extending the existing operation interface. Using the MOSAIC option 
+in the GUI, the user can apply the Mosaic filter to the current image. However, a design choice we made was that the 
 number of seeds were a certain percentage of the image's dimensions. We made this choice because of computer 
 processing differences and for the best looking-image. In the current edition, the ratio is 4%, so in a 100,000
 pixel photo, the number of seeds would be 100,000 * 0.04 = 4,000 seeds. 
 
-For extra credit purposes only, we included 3 versions of mosaicking. The original image is "cyrus", with the 
+We included 3 versions of mosaicking. The original image is "cyrus", with the 
 following percentage mosaicking (as noted by the image name):
 4%
 8%
 12%
 
-=================View (HW06) ================= 
+=================View (Text only)================= 
 The view contains one interface, IImageView, which contains two methods: renderMessage and renderIImage. 
 The interface is extended by BasicView, and is in charge of delivering messages to the user 
 and rendering the images. The class uses an Appendable to display messages to the user. 
 If the appendable fails, it will be replaced by a message in the console. 
 
-=================View (HW 07)================= 
+=================View================= 
 In our updated view model, we have an interface, ISwingView, that uses Java Swing and allows the user 
 to interact with a window, containing the layers, their images, and the different types of filters. The 
 ISwingView interface contains several methods: setListener(ActionListener), startViewing(),  
@@ -83,7 +83,7 @@ The IImageCommand interface contains one method: go. The interface is implemente
 The user can only manipulate one layer at a time. To traverse the layers, the user must set the 
 current layer to the index they desire. 
 
-Edits for HW07:
+Most Recent Edits:
 1) Created a new controller class, SwingController. It is designed to fill in the blanks between
 using the console-only input method and the Swing view. SwingController implements the 
 IController (mentioned above) and ActionListener (built-in) interfaces. SwingController contains the methods
