@@ -163,7 +163,7 @@ render an image with the Mosaic filter (extra credit). The constructor for Mosai
 the int number of seeds, and a Random. The class contains the method apply(), which applies the mosaicking to the 
 given Mosaic. The class also contains overrides for hashCode and equals methods. 
 
-=================Importing / Exporting Capabilities (changes to import/export for HW07)=================
+=================Importing / Exporting Capabilities=================
 We moved our importexport package from the model to the controller. In the package, we have 
 two interfaces, IImporter and IFileExporter. The IImporter contains one method, importFrom, as before, 
 that takes in a String file name. IImporter is implemented by two classes, 
