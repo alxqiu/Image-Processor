@@ -129,7 +129,7 @@ batch: imports a batch of commands from the file source
 - Creates a view window using Java Swing. Users can interact with the window to change their layers.
 
 
-=================Layering Capabilities (changes to model for HW06)=================
+=================Layering Capabilities=================
 We added an additional interface and class to the model, called ILayeredModel and LayeredProcessorModel, 
 respectively. The interface (and class) handles multiple layered images. The class LayeredProcessorModel 
 extends BasicProcessorModel, since most of the methods can be abstracted. However, it does have 
